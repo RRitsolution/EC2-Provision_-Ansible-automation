@@ -2,7 +2,7 @@
 
 
 ##For secrets.yaml##    kindly use ansible_vault
-ansible-vault encrypt secrets.yaml  ## Run this command and then it will ask for password you can set any password
+ansible-vault create secrets.yaml  ## Run this command and then it will ask for password you can set any password
 
 Then store these values:-
 
