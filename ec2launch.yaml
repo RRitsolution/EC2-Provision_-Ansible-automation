@@ -13,7 +13,7 @@
           instance_type: t2.micro
           key_name: "{{key_name}}"
           security_group: "{{security_group}}"
-          vpc_subnet_id: subnet-0ef3d45434656e695
+          vpc_subnet_id: "{{vpc_subnet_id}}"
           network_interfaces:
               - assign_public_ip: true
           count: 3
