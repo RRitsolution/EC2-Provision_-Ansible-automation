@@ -1,3 +1,6 @@
+## This is repository for launch EC2 using Ansbile
+
+
 ##For secrets.yaml##    kindly use ansible_vault
 ansible-vault encrypt secrets.yaml  ## Run this command and then it will ask for password you can set any password
 
