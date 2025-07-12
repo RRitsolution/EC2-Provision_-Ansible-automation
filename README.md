@@ -11,7 +11,7 @@ key_name: put the name of ssh key name
 security_group: put the secrity group name
 vpc_subnet_id: put the vpc subnet id  
 
-##Finally to run ANsbile playbook
+##Finally to run Ansible playbook
 ansible-playbook -i inventory.ini ec2launch.yaml --ask-vault-pass  ###It will ask to enter password so enter the already defined password
 
 
