@@ -1,8 +1,8 @@
-## This is repository for launch EC2 using Ansbile
+## This is repository for launch EC2 using Ansbile Automation tool
 
 
 
-##For secrets.yaml##    kindly use ansible_vault
+##For secrets.yaml##    kindly use ansible_vault to create this (It is mentioned in playbook)
 ansible-vault create secrets.yaml  ## Run this command and then it will ask for password you can set any password
 
 Then store these values:-
@@ -16,7 +16,16 @@ ansible-playbook -i inventory.ini ec2launch.yaml --ask-vault-pass  ###It will as
 
 
 
-Important Note:-1 EC2 already running on AWS where Ansbile is installed and boto & boto3 and module amazon.aws.ec2_instance are installed . 
+Important Note:-I have already 1 EC2 already running on AWS where Ansbile is installed and boto, boto3 botocore and collection amazon.aws are installed . 
+
+
+You have to also setup for AWS access key & AWS secret key on Ansible master node to access on AWS .
+
+It can be done export as ENV.
+
+
+
+
 
 
 
