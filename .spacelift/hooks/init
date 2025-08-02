@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+echo "🔧 Installing AWS Python SDKs for Ansible..."
+pip install boto3 botocore
