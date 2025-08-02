@@ -1,5 +1,17 @@
 #!/bin/bash
 set -e
 
-echo "🔧 Installing AWS Python SDKs for Ansible..."
-pip install boto3 botocore
+echo "🔧 [HOOK] Starting Spacelift init hook..."
+
+# Check if pip exists
+if ! command -v pip &> /dev/null; then
+  echo "⚠️ pip not found. Trying to install pip..."
+  curl -sS https://bootstrap.pypa.io/get-pip.py | python3
+fi
+
+echo "✅ pip found at: $(which pip)"
+echo "📦 Installing boto3 and botocore..."
+
+pip install --user boto3 botocore
+
+echo "✅ boto3 and botocore installed successfully"
